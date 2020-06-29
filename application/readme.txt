@@ -1,6 +1,6 @@
 
 
-JAVA_OPTS="-server -showversion -Xms12g -Xmx12g -XX:PermSize=800m -XX:MaxPermSize=512m  -Xms2048M -Xmx2048M "
+JAVA_OPTS="-server -showversion -Xms12g -Xmx12g -XX:PermSize=800m -Xms2048M -Xmx2048M "
 JAVA_OPTS="$JAVA_OPTS -d64 -XX:CICompilerCount=8 -XX:+UseCompressedOops"
 JAVA_OPTS="$JAVA_OPTS -XX:SurvivorRatio=4 -XX:TargetSurvivorRatio=90"
 JAVA_OPTS="$JAVA_OPTS -XX:ReservedCodeCacheSize=512m -XX:-UseAdaptiveSizePolicy"

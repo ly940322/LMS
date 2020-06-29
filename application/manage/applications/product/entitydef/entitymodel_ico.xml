@@ -281,8 +281,8 @@ under the License.
             <entity-condition>
                 <condition-list>
                     <condition-list combine="and" >
-                         <condition-expr field-name="isVerify" operator="equals" value="Y"/>
-                        <condition-expr field-name="isDel" operator="equals" value="N"/>
+                         <condition-expr field-name="isVerify" operator="equals" value="Y" entity-alias="PDT"/>
+                        <condition-expr field-name="isDel" operator="equals" value="N" entity-alias="PDT"/>
                     </condition-list>
                 </condition-list>
             </entity-condition>
@@ -441,8 +441,8 @@ under the License.
                  title="Facility By ProductStoreId Event View Entity">
         <member-entity entity-alias="FA" entity-name="Facility"/>
         <member-entity entity-alias="PSF" entity-name="ProductStoreFacility"/>
-        <alias entity-alias="PSF" name="productStoreId"/>
         <alias-all entity-alias="FA"/>
+        <alias entity-alias="PSF" name="productStoreId"/>
         <view-link entity-alias="FA" rel-entity-alias="PSF">
             <key-map field-name="facilityId"/>
         </view-link>

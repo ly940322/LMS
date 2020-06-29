@@ -26,7 +26,7 @@ else
 fi
 
 #JAVA=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/java
-JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/bin/java
+JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
 
 top="$(cd "$(dirname "$0")"; echo "$PWD")"
 find_jar() {

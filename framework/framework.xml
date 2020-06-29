@@ -26,7 +26,7 @@ under the License.
     <property name="memory.initial.param" value="-Xms512M"/>
     <property name="memory.max.param" value="-Xmx1024M"/>
     <property name="pos.memory.max.param" value="-Xmx512M"/>
-    <property name="memory.maxpermsize.param" value="-XX:MaxPermSize=512m"/>
+<!--    <property name="memory.maxpermsize.param" value="-XX:MaxPermSize=512m"/>-->
 
     <available file="application/build.xml" property="applications.present"/>
     <available file="services/build.xml" property="services.present"/>
@@ -423,7 +423,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
         </java>
     </target>
     <!-- agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n-->
@@ -433,7 +433,7 @@ under the License.
             <arg value="${app}"/>
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <!--<jvmarg value="${memory.maxpermsize.param}"/>-->
+
             <jvmarg value="-Xnoagent"/>
             <jvmarg value="-Djava.compiler=NONE"/>
             <jvmarg value="-Xdebug"/>
@@ -447,7 +447,7 @@ under the License.
             <arg value="${app}"/>
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            &lt;!&ndash;<jvmarg value="${memory.maxpermsize.param}"/>&ndash;&gt;
+            &lt;!&ndash;&ndash;&gt;
             <jvmarg value="-Xnoagent"/>
             <jvmarg value="-Djava.compiler=NONE"/>
             <jvmarg value="-Xdebug"/>
@@ -460,7 +460,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true" spawn="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
         </java>
     </target>
     <target name="start-debug"
@@ -468,7 +468,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <jvmarg value="-Xnoagent"/>
             <jvmarg value="-Djava.compiler=NONE"/>
             <jvmarg value="-Xdebug"/>
@@ -480,7 +480,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="pos"/>
         </java>
     </target>
@@ -506,7 +506,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
         </java>
     </target>
@@ -515,20 +515,20 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
         </java>
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=default#DEMO1"/>
         </java>
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=default#DEMO2"/>
         </java>
@@ -538,7 +538,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=seed"/>
         </java>
@@ -548,7 +548,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=seed,seed-initial,ext"/>
         </java>
@@ -558,7 +558,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=seed,seed-initial,ext,ext-test"/>
         </java>
@@ -568,7 +568,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=${data-readers}"/>
         </java>
@@ -579,7 +579,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="delegator=${delegator}"/>
             <arg value="install"/>
             <arg value="readers=${data-readers}"/>
@@ -592,7 +592,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=${delegator}"/>
             <arg value="file=${data-file}"/>
@@ -609,7 +609,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=tenant"/>
         </java>
@@ -658,7 +658,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=default#${tenantId}"/>
         </java>
@@ -667,7 +667,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=default#${tenantId}"/>
             <arg value="readers=${data-readers}"/>
@@ -694,7 +694,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=default#${tenantId}"/>
             <arg value="component=${component}"/>
@@ -704,7 +704,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=default#${tenantId}"/>
             <arg value="readers=${data-readers}"/>
@@ -722,7 +722,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=tenant"/>
         </java>
@@ -745,7 +745,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="delegator=${delegator}"/>
         </java>
@@ -754,7 +754,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=${data-readers}"/>
             <arg value="delegator=${delegator}"/>
@@ -940,7 +940,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="install"/>
             <arg value="readers=${data-readers}"/>
             <arg value="delegator=default#${tenantId}"/>
@@ -977,7 +977,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true" resultproperty="test.result">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="test"/>
             <env key="LC_ALL" value="C"/>
         </java>
@@ -1008,7 +1008,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="testlist"/>
             <arg file="runtime/test-list-build.xml"/>
             <arg value="-ant"/>
@@ -1022,7 +1022,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true" resultproperty="test.result">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="test"/>
             <arg value="-component=${test.component}"/>
             <arg value="-case=${test.case}"/>
@@ -1048,7 +1048,7 @@ under the License.
         <java jar="ofbiz.jar" fork="true" resultproperty="test.result">
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
-            <jvmarg value="${memory.maxpermsize.param}"/>
+
             <arg value="test"/>
             <arg value="-component=${test.component}"/>
             <arg value="-suitename=${test.suiteName}"/>

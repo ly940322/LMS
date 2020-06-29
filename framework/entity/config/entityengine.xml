@@ -353,10 +353,10 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <read-data reader-name="ext"/>
         <!--hikari pool-minsize ,time-between-eviction-runs-millis 不需要配置-->
         <inline-jdbc
-                jdbc-driver="com.mysql.jdbc.Driver"
-                jdbc-uri="jdbc:mysql://192.168.1.152:3306/ico_test?autoReconnect=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"
+                jdbc-driver="com.mysql.cj.jdbc.Driver"
+                jdbc-uri="jdbc:mysql://localhost:3306/freedgo?nullCatalogMeansCurrent=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Shanghai"
                 jdbc-username="root"
-                jdbc-password="ONuX2RFTaPBqLLGM"
+                jdbc-password="Yy@123456"
                 isolation-level="RepeatableRead"
                 pool-minsize="5"
                 pool-maxsize="50"
@@ -396,10 +396,10 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <read-data reader-name="demo"/>
         <read-data reader-name="ext"/>
         <inline-jdbc
-                jdbc-driver="com.mysql.jdbc.Driver"
-                jdbc-uri="jdbc:mysql://192.168.1.152:3306/ofbizolap?autoReconnect=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"
+                jdbc-driver="com.mysql.cj.jdbc.Driver"
+                jdbc-uri="jdbc:mysql://localhost:3306/freedgo?nullCatalogMeansCurrent=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Shanghai"
                 jdbc-username="root"
-                jdbc-password="ONuX2RFTaPBqLLGM"
+                jdbc-password="Yy@123456"
                 isolation-level="ReadCommitted"
                 pool-minsize="5"
                 pool-maxsize="50"
@@ -428,10 +428,10 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <read-data reader-name="demo"/>
         <read-data reader-name="ext"/>
         <inline-jdbc
-                jdbc-driver="com.mysql.jdbc.Driver"
-                jdbc-uri="jdbc:mysql://192.168.1.152:3306/ofbiztenant?autoReconnect=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"
+                jdbc-driver="com.mysql.cj.jdbc.Driver"
+                jdbc-uri="jdbc:mysql://localhost:3306/freedgo?nullCatalogMeansCurrent=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Shanghai"
                 jdbc-username="root"
-                jdbc-password="ONuX2RFTaPBqLLGM"
+                jdbc-password="Yy@123456"
                 isolation-level="ReadCommitted"
                 pool-minsize="5"
                 pool-maxsize="50"
@@ -456,10 +456,10 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <read-data reader-name="tenant"/>
         <read-data reader-name="seed"/>
         <inline-jdbc
-                jdbc-driver="com.mysql.jdbc.Driver"
-                jdbc-uri="jdbc:mysql://192.168.1.152:3306/ofbiz_odbc?autoReconnect=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"
+                jdbc-driver="com.mysql.cj.jdbc.Driver"
+                jdbc-uri="jdbc:mysql://localhost:3306/freedgo?nullCatalogMeansCurrent=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Shanghai"
                 jdbc-username="root"
-                jdbc-password="ONuX2RFTaPBqLLGM"
+                jdbc-password="Yy@123456"
                 isolation-level="ReadCommitted"
                 pool-minsize="5"
                 pool-maxsize="50"
